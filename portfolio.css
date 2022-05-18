@@ -418,7 +418,8 @@ a:hover{
 
 
 }
-@media (max-width : 974px) {
+
+@media (max-width : 720px) {
     :root {
         --containner-height: 170vw;
         --containner-width: calc(var(--containner-height) /3.5);
