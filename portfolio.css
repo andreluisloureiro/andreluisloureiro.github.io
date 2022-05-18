@@ -101,12 +101,11 @@ z-index:-4;
 .textoNav {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     justify-content: center;
     font-family: 'Smooch Sans', bold;
     color: white;
     font-size: 40px;
- 
     margin-left: 35px;
 }
 
