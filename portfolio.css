@@ -1,0 +1,597 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+html {
+    scroll-behavior: smooth;
+    min-height:100%;
+    position:relative;
+  }
+
+body {
+  
+margin: 0px;
+display: block;
+justify-content: center;
+align-items: center;
+height:100%;
+   background-size: 300% 300%;
+  background-image: linear-gradient(
+        -45deg, 
+         #690e61 0%, 
+         #030614 25%, 
+         #14030f 51%, 
+         #591153 100%
+  );  
+animation: AnimateBG 10s ease infinite;
+
+}
+
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+:root {
+    --fundo-height: 100%;
+    --fotos-height: 10vmax;
+  }
+
+.tudo{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: min(40px);
+
+}
+
+.coresFundo{
+display: flex;
+justify-content: center;
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+overflow:hidden;
+z-index:-4;
+}
+
+
+
+.controleNav {
+    transition: 500ms;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    z-index: +1;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+
+}
+
+.controleNav.header {
+    top:-60px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+
+    
+}
+
+
+.nav{
+    height: 45px;
+    width: 100%;
+    background-color: #03081c;
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    z-index: +1;
+    opacity: 100%;
+    border-bottom: solid 3px #a80e9b;   
+    box-shadow: 0px 0px 5px 3px rgba(228, 36, 215, 0.267); 
+    transition: 600ms; 
+    
+}
+
+.nav:hover{
+    border-bottom: solid 3px #a80e9b;   
+    box-shadow: 0px 0px 20px 10px rgba(228, 36, 215, 0.267);  
+    
+}
+
+
+
+.textoNav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: 40px;
+ 
+    margin-left: 35px;
+}
+
+
+
+.containergeral {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-color: #03081c;
+height: 18vmax;
+width: 80vmax;
+border-radius: 4vmax;
+border:  0.3vw;
+border-color:  #a80e9b;
+-webkit-box-shadow: 5px 4px 30px 5px #591153; 
+box-shadow: 0 -0mm 5mm #591153;
+border-style: solid;
+position: relative;
+top: 10vh;
+bottom:0px;
+left:0px;
+right:0px;
+margin-top: 8vw;
+margin-bottom: 10vw;
+transition: 300ms;
+}
+
+
+.containergeral:hover {
+    -webkit-box-shadow: 5px 4px 30px 50px #591153; 
+    box-shadow: 0 -0mm 10mm #591153;
+   
+    
+    
+
+}
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .divimagem {
+        
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        position: relative;
+    
+        
+        }
+
+p{
+  text-shadow: 0px 0px 0px #591153;
+  transition:300ms
+}
+
+p:hover{
+  text-shadow: 2px 2px 6px #591153;
+}
+
+img{
+  box-shadow: 0mm 0mm 0mm #591153;
+}
+
+img:hover{
+  box-shadow: 0mm 0mm 10mm #591153;
+} 
+
+.imagem1 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--fotos-height);
+        height: var(--fotos-height);
+        object-fit: cover;
+        border-radius: 10%;
+        position: relative;
+        background-color: transparent;
+        transition: 500ms;
+  margin-bottom: 10px;
+
+    }
+    
+
+    .imagem2 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--fotos-height);
+        height: var(--fotos-height);
+        object-fit: cover;
+        border-radius: 5%;
+        position: relative;
+        background-color: transparent;
+        transition: 500ms;
+        border-radius: 10%;
+      margin-bottom: 10px;
+    }
+   
+
+    .imagem3 {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--fotos-height);
+        height: var(--fotos-height);
+        object-fit: cover;
+        border-radius: 5%;
+        position: relative;
+        background-color: transparent;
+        transition: 500ms;
+      margin-bottom: 10px;
+    }
+
+    .imagemEu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--fotos-height);
+        height: var(--fotos-height);
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+        transition: 500ms;
+      margin-bottom: 10px;
+        
+    }
+   
+a{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Smooch Sans', bold;
+        color: white;
+        font-size: 1.7vw;
+        text-decoration: none;
+        transition: 500ms;
+}
+    
+a:hover{
+  color: rgb(234, 131, 238); 
+}      
+    
+
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10vw;
+    
+    }
+    
+    
+    .containerFoto{
+    
+    
+    }
+    
+    .divFoto{
+    
+    
+    }
+    
+    .imagemDescricao {
+        position: relative;
+        height: 25vw;
+        border-radius: 50%;
+        right: 9vw;
+        transition: 500ms;
+        opacity: 0%;
+        
+    }
+    
+    .imagemDescricao.surgirImagemDescricao {
+        right: 1vw;
+        opacity: 100%;
+    
+    }
+    
+    
+    .containerSobreMim{
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+    
+    .divTitulo{
+        position: relative;
+        left: 5vw;
+        opacity: 0%;
+        transition: 400ms ease-in-out;
+    
+    }
+    
+    .divTitulo.surgirTitulo{
+        margin-left: 0px;
+        left: 0px;
+        opacity: 100%;
+    }
+    
+    .tituloDescricao{
+        color: white;
+        font-family: 'Smooch Sans', bold;
+        font-size: 4vw;
+        margin: 0px;
+    }
+    
+    .tituloDescricao.hover{
+        
+    }
+    
+    .divTexto{
+     
+    
+    }
+    
+    .textoDescricao{
+        position: relative;
+        font-family: 'Smooch Sans', bold;
+        font-size: 2vw;
+        max-width: 45vw;
+        color: white;
+        width: 40vw;
+        left: 5vw;
+        transition: 500ms ease-in-out;
+        opacity: 0%;
+    }
+    
+    .textoDescricao.surgirDescricao{
+        left: 0vw;
+        opacity: 100%;
+    }
+
+
+
+
+    .divEmail{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+.textoEmail{
+  font-family: 'Smooch Sans', bold;
+        color: white;
+}
+
+
+.projetos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projeto1{
+    position: relative;
+    top: 5vw;
+    transition: 1200ms;
+    margin: 15vw;
+    opacity: 0%;
+}
+
+.projeto1.surgirProjeto1{
+    top: 0px;
+    opacity: 100%;
+}
+
+.imagemProjeto1{
+    width: 25vw;
+    height: 25vw;
+    object-fit: fill;
+    border-radius: 50%;
+    transition: 500ms;
+    border: 3px solid #5c1156;
+
+}
+
+.textoProjeto1{
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 974px) {
+
+    .container{
+        margin-top: 20vw;
+    
+    }
+
+
+}
+@media (max-width : 667px) {
+    :root {
+        --containner-height: 170vw;
+        --containner-width: calc(var(--containner-height) /3.5);
+        --fotos-heightWidth: calc(var(--containner-height) /7);
+      }
+    
+      .teste{margin-top: 20px;}
+      
+      .textoEmail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Smooch Sans', bold;
+        color: white;
+        font-size: 5vw;
+        text-shadow: 2px 2px 6px #591153;
+        opacity: 0%;
+        transition: 800ms;
+        margin-top: 20px;
+    }
+      
+        
+    .containergeral {
+        display: flex;
+        transition: 300ms;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #03081c;
+        height: var(--containner-height);
+        width: var(--containner-width);
+        border-radius: 5vmin;
+        border:  0.8vw;
+        border-color:  #a80e9b;
+        -webkit-box-shadow: 5px 4px 30px 5px #591153; 
+        box-shadow: 0 -0mm 5mm #591153;
+        border-style: solid;
+        position: relative;
+        top: 5vh;
+        transition: 300ms;
+        flex-direction: column;
+        
+        
+    
+    }
+
+
+    .imagem1 {
+        width:  var(--fotos-heightWidth);
+        height:  var(--fotos-heightWidth);  
+    }
+
+    .imagem2 {
+        width:  var(--fotos-heightWidth);
+        height:  var(--fotos-heightWidth);  
+    }
+
+    .imagem3 {
+        width:  var(--fotos-heightWidth);
+        height:  var(--fotos-heightWidth);  
+    }
+
+    .imagemEu { 
+        width:  var(--fotos-heightWidth);
+        height: var(--fotos-heightWidth);
+        object-fit: cover;
+        position: relative;  
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+    }
+   
+    .textoCodePen{
+        font-size: 4vw;
+    }
+    
+    .textoBehance{
+        font-size: 4vw;
+    }
+
+
+    .textoSobreMim1{
+        font-size: 4vw;
+      text-decoration: none !important
+    }
+
+
+    .textoLinkedin{
+        font-size: 4vw;
+    }
+
+    .controleNav.header {
+        top: -90px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        
+    }
+    
+    .nav{
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    .textoNav {
+        
+        font-size: 10vw;
+        margin-left: 0px;
+        
+    }
+
+
+    .container{
+        flex-direction: column;
+    
+    }
+
+    .imagemDescricao {
+        display: none;
+        
+    }
+
+    .textoDescricao{
+        font-size: 5vw;
+        max-width: 71vw;
+        width: 71vw;
+        
+    }
+
+    .containerSobreMim{
+        width: 30vw;
+        margin-top: 5vw;
+    
+    }
+
+
+    .tituloDescricao{
+        color: white;
+        font-family: 'Smooch Sans', bold;
+        font-size: 8vw;
+        margin: 0px;
+    }
+
+    .divEmail{margin-top: 5vw;
+    }
+
+  .projetos{
+    display: none;
+    
+}
+
+
+
+
+
+}
+
+
