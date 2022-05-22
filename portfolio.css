@@ -41,12 +41,15 @@ margin-bottom: min(40px);
 display: flex;
 justify-content: center;
 position:absolute;
+background-size: 300% 300%;
+background-image: linear-gradient( -45deg, #690e61 0%, #030614 25%, #14030f 51%, #591153 100% ); 
+animation: AnimateBG 10s ease infinite;
 top:0;
 bottom:0;
 left:0;
 right:0;
 overflow:hidden;
-z-index:-4;
+z-index:0;
 }
 
 
