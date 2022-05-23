@@ -4,12 +4,13 @@ let textoGrande = document.querySelector("[data-textoDescricao]")
 let imagem = document.querySelector("[data-imagemDescricao]")
 let imagem2 = document.querySelector("[data-imagemEu3]")
 let projeto1 = document.querySelector("[data-projeto1]")
+let tJ = document.querySelector("[data-tJ]")
 
 
 
-window.addEventListener('scroll', () =>{
-    var scroll1 = window.scrollY
-    console.log(scroll1)
+window.addEventListener('click', () =>{
+    var scroll1 = window.innerWidth
+    tJ.innerHTML = scroll1
 })
 
 
@@ -101,4 +102,6 @@ function scrollToElement(id) {
 if(location.hash != "") {
 	location.href = location.hash;
 }
+
+
 
