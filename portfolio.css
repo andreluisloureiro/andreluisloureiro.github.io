@@ -456,17 +456,7 @@ margin-top: 0px;
 
 
 
-
-
-@media (max-width : 974px) {
-
-    .container{
-        margin-top: 20vw;
-    
-    }
-
-}
-@media (max-width : 667px) {
+@media (max-width : 1080px) {
     :root {
         --containner-height: 170vw;
         --containner-width: calc(var(--containner-height) /3.5);
