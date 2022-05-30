@@ -125,7 +125,7 @@ z-index:-1;
 .textoNav {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     justify-content: center;
     font-family: 'Smooch Sans', bold;
     color: white;
