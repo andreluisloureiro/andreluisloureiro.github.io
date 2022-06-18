@@ -441,12 +441,12 @@ margin-top: 0px;
 
 @media (max-width : 1080px) {
     :root {
-        --containner-height: 700px;
-        --containner-width: calc(var(--containner-height) /3);
-        --fotos-heightWidth: calc(var(--containner-height) /6);
+        --containner-height: 100vw;
+        --containner-width: 40%;
+        --fotos-heightWidth: 20vw;
       }
     
-      .teste{margin-top: 20px;
+      .teste{margin-top: 5vw;
     
     }
       
@@ -458,8 +458,9 @@ margin-top: 0px;
         height: var(--containner-height);
         width: var(--containner-width);
         flex-direction: column; 
-        margin-top: 60px;  
-        margin-bottom: 60px;
+        margin-top: 5vw;  
+        margin-bottom: 5vw;
+        border-radius: 3vw;
     }
 
 
@@ -485,22 +486,22 @@ margin-top: 0px;
     }
    
     .textoCodePen{
-        font-size: 20px;
+        font-size: 3vw;
     }
     
     .textoBehance{
-        font-size: 20px;
+        font-size: 3vw;
     }
 
 
     .textoSobreMim1{
-        font-size: 20px;
+        font-size: 4vw;
       text-decoration: none !important
     }
 
 
     .textoLinkedin{
-        font-size: 20px;
+        font-size: 3vw;
     }
 
     .controleNav.header {
@@ -512,7 +513,7 @@ margin-top: 0px;
     }
     
     .nav{
-        height: 45px;
+        height: 8vw;
         width: 100%;
         display: flex;
         position: relative;
@@ -524,7 +525,7 @@ margin-top: 0px;
     
     .textoNav {
         
-        font-size: 40px;
+        font-size: 8vw;
         margin-left: 0px;
         
     }
@@ -542,9 +543,9 @@ margin-top: 0px;
     }
 
     .textoDescricao{
-        font-size: 20px;
-        max-width: 300px;
-        width: 280px;
+        font-size: 3vw;
+        max-width: 60vw;
+        width: 400vw;
         
     }
 
@@ -589,8 +590,8 @@ margin-top: 0px;
     }
     
     .imagemProjeto1{
-        width: 150px;
-        height: 150px;
+        width: 28vw;
+        height: 28vw;
         object-fit: fill;
         border-radius: 50%;
         transition: 500ms;
@@ -601,7 +602,7 @@ margin-top: 0px;
     .textoProjeto1 {
         font-family: 'Smooch Sans', bold;
         color: white;
-        font-size: 18px;
+        font-size: 3vw;
     }
 
 }
