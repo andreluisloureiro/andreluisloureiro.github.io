@@ -16,7 +16,7 @@ display: block;
 justify-content: center;
 align-items: center;
 height:100%;
-background-color: #030614;
+background-color:#030614;
 }
 
 
@@ -24,9 +24,8 @@ background-color: #030614;
 
 
 @keyframes AnimateBG { 
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+    0%{transform:scale(100%)}
+    50%{transform:scale(300%)}
 }
 
 
@@ -46,10 +45,10 @@ margin-bottom: min(40px);
 .coresFundo{
 display: flex;
 justify-content: center;
-position:absolute;
-background-size: 300% 300%;
+position:fixed;
+background-size: 125% 125%;
 background-image: linear-gradient( -45deg, #690e61 0%, #030614 25%, #14030f 51%, #591153 100% ); 
-animation: AnimateBG 10s ease infinite;
+animation: AnimateBG 15s ease infinite;
 top:0;
 bottom:0;
 left:0;
@@ -58,20 +57,6 @@ overflow:hidden;
 z-index:0;
 }
 
-.coresFundo2{
-display: flex;
-justify-content: center;
-position:absolute;
-background-size: 300% 300%;
-background-image: linear-gradient( -45deg, #690e61 0%, #030614 25%, #14030f 51%, #591153 100% ); 
-animation: AnimateBG 10s ease infinite;
-top:0;
-bottom:0;
-left:0;
-right:0;
-overflow:hidden;
-z-index:-1;
- }
 
 
 
@@ -142,7 +127,7 @@ justify-content: space-evenly;
 align-items: center;
 background-color: #03081c;
 height: 18vmax;
-width: 80vmax;
+width: 70vmax;
 border-radius: 4vmax;
 border:  0.3vw;
 border-color:  #a80e9b;
@@ -189,6 +174,7 @@ transition: 300ms;
 p{
   text-shadow: 0px 0px 0px #591153;
   transition:300ms
+  
 }
 
 p:hover{
@@ -425,7 +411,7 @@ margin-top: 0px;
 
 }
 
-.textoProjeto1{
+.textoProjeto1 {
     font-family: 'Smooch Sans', bold;
     color: white;
     font-size: 2vw;
@@ -460,43 +446,18 @@ margin-top: 0px;
         --fotos-heightWidth: calc(var(--containner-height) /7);
       }
     
-      .teste{margin-top: 20px;}
-      
-      .textoEmail{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Smooch Sans', bold;
-        color: white;
-        font-size: 5vw;
-        text-shadow: 2px 2px 6px #591153;
-        opacity: 0%;
-        transition: 800ms;
-        margin-top: 20px;
+      .teste{margin-top: 20px;
+    
     }
       
-        
-    .containergeral {
+        .containergeral {
         display: flex;
-        transition: 300ms;
         justify-content: space-around;
         align-items: center;
         background-color: #03081c;
         height: var(--containner-height);
         width: var(--containner-width);
-        border-radius: 5vmin;
-        border:  0.8vw;
-        border-color:  #a80e9b;
-        -webkit-box-shadow: 5px 4px 30px 5px #591153; 
-        box-shadow: 0 -0mm 5mm #591153;
-        border-style: solid;
-        position: relative;
-        top: 5vh;
-        transition: 300ms;
-        flex-direction: column;
-        
-        
-    
+        flex-direction: column;   
     }
 
 
@@ -518,11 +479,7 @@ margin-top: 0px;
     .imagemEu { 
         width:  var(--fotos-heightWidth);
         height: var(--fotos-heightWidth);
-        object-fit: cover;
-        position: relative;  
-        display: flex;
-        align-items: center;
-        justify-content: center;      
+ 
     }
    
     .textoCodePen{
