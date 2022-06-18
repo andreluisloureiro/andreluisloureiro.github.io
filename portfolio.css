@@ -441,9 +441,10 @@ margin-top: 0px;
 
 @media (max-width : 1080px) {
     :root {
-        --containner-height: 100vw;
-        --containner-width: 40%;
-        --fotos-heightWidth: 20vw;
+        --containner-height: 200vw;
+        --containner-width: 70%;
+        --fotos-heightWidth: 40vw;
+        --text-fontSize: 5.5vw;
       }
     
       .teste{margin-top: 5vw;
@@ -486,26 +487,20 @@ margin-top: 0px;
     }
    
     .textoCodePen{
-        font-size: 3vw;
+        font-size: var(--text-fontSize);
     }
     
     .textoBehance{
-        font-size: 3vw;
-    }
-
-
-    .textoSobreMim1{
-        font-size: 4vw;
-      text-decoration: none !important
+        font-size: var(--text-fontSize);
     }
 
 
     .textoLinkedin{
-        font-size: 3vw;
+        font-size: var(--text-fontSize);
     }
 
     .controleNav.header {
-        top: -120px;
+        top: -35vw;
         bottom:0px;
         left:0px;
         right:0px;
@@ -513,7 +508,7 @@ margin-top: 0px;
     }
     
     .nav{
-        height: 8vw;
+        height: 15vw;
         width: 100%;
         display: flex;
         position: relative;
@@ -525,7 +520,7 @@ margin-top: 0px;
     
     .textoNav {
         
-        font-size: 8vw;
+        font-size: 13vw;
         margin-left: 0px;
         
     }
@@ -543,11 +538,21 @@ margin-top: 0px;
     }
 
     .textoDescricao{
-        font-size: 3vw;
-        max-width: 60vw;
-        width: 400vw;
+        font-size: 6vw;
+        max-width: 78vw;
+        width: 600vw;
         
     }
+
+
+    .tituloDescricao{
+        color: white;
+        font-family: 'Smooch Sans', bold;
+        font-size: 13vw;
+        margin: 0px;
+        width: 600vw;
+    }
+
 
     .containerSobreMim{
         width: 30vw;
@@ -556,13 +561,7 @@ margin-top: 0px;
     }
 
 
-    .tituloDescricao{
-        color: white;
-        font-family: 'Smooch Sans', bold;
-        font-size: 8vw;
-        margin: 0px;
-    }
-
+    
     .divEmail{margin-top: 0vw;
     }
 
@@ -590,8 +589,8 @@ margin-top: 0px;
     }
     
     .imagemProjeto1{
-        width: 28vw;
-        height: 28vw;
+        width: 40vw;
+        height: 40vw;
         object-fit: fill;
         border-radius: 50%;
         transition: 500ms;
@@ -602,7 +601,10 @@ margin-top: 0px;
     .textoProjeto1 {
         font-family: 'Smooch Sans', bold;
         color: white;
-        font-size: 3vw;
+        font-size: 6vw;
+    }
+    .textoEmail{
+        font-size: 4vw;  
     }
 
 }
