@@ -88,6 +88,13 @@ window.onscroll=()=> {
         if(window.scrollY<=300){
             imagem.classList.remove("surgirImagemDescricao")
         }
+
+        if(window.scrollY>=305){
+            projeto1.classList.add("surgirProjeto1")
+        }if(window.scrollY<=300){
+            projeto1.classList.remove("surgirProjeto1")
+        }
+
 } 
 }
 
@@ -102,6 +109,4 @@ function scrollToElement(id) {
 if(location.hash != "") {
 	location.href = location.hash;
 }
-
-
 
