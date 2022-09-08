@@ -63,6 +63,9 @@ body {
     z-index: 0;
 }
 
+
+
+
 .controleNav {
     transition: 500ms;
     display: flex;
@@ -131,11 +134,9 @@ body {
     background-color: #03081c;
     height: 230px;
     width: 900px;
-    border-radius: 20px;
-    border: 4px;
+    border: 0px;
     border-color: #a80e9b;
-    -webkit-box-shadow: 5px 4px 30px 5px #591153;
-    box-shadow: 0 -0mm 5mm #591153;
+
     border-style: solid;
     position: relative;
     top: 0px;
@@ -145,6 +146,7 @@ body {
     margin-top: 150px;
     margin-bottom: 0px;
     transition: 300ms;
+    clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
 }
 
 
@@ -158,6 +160,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30vw;
 }
 
 .divimagem {
@@ -195,11 +198,12 @@ img:hover {
     width: var(--fotos-height);
     height: var(--fotos-height);
     object-fit: cover;
-    border-radius: 10%;
     position: relative;
+    border-radius: 5%;
     background-color: transparent;
     transition: 500ms;
     margin-bottom: 10px;
+    clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
 
 }
 
@@ -218,6 +222,7 @@ img:hover {
     transition: 500ms;
     border-radius: 10%;
     margin-bottom: 10px;
+    clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
 }
 
 
@@ -229,11 +234,12 @@ img:hover {
     width: var(--fotos-height);
     height: var(--fotos-height);
     object-fit: cover;
-    border-radius: 5%;
+    border-radius: 10%;
     position: relative;
     background-color: transparent;
     transition: 500ms;
     margin-bottom: 10px;
+    clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
 }
 
 .imagemEu {
@@ -256,9 +262,10 @@ a {
     justify-content: center;
     font-family: 'Smooch Sans', bold;
     color: white;
-    font-size: 1.7vw;
+    font-size: max(26px, 3px);
     text-decoration: none;
     transition: 500ms;
+    text-align: center;
 }
 
 a:hover {
@@ -388,14 +395,12 @@ a:hover {
     object-fit: fill;
     border-radius: 50%;
     transition: 500ms;
-    border: 3px solid #5c1156;
-
 }
 
 .textoProjeto1 {
     font-family: 'Smooch Sans', bold;
     color: white;
-    font-size: 2vw;
+    font-size: max(26px, 3px);
 }
 
 .divTamanhoJanela {
