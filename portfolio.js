@@ -4,6 +4,7 @@ let textoGrande = document.querySelector("[data-textoDescricao]")
 let imagem = document.querySelector("[data-imagemDescricao]")
 let imagem2 = document.querySelector("[data-imagemEu3]")
 let projeto1 = document.querySelector("[data-projeto1]")
+let projeto2 = document.querySelector("[data-projeto2]")
 let tJ = document.querySelector("[data-tJ]")
 
 
@@ -54,6 +55,12 @@ window.onscroll=()=> {
         }if(window.scrollY<=550){
             projeto1.classList.remove("surgirProjeto1")
         }
+
+        if(window.scrollY>=600){
+            projeto2.classList.add("surgirProjeto2")
+        }if(window.scrollY<=550){
+            projeto2.classList.remove("surgirProjeto2")
+        }
         
 }  
 
@@ -93,6 +100,12 @@ window.onscroll=()=> {
             projeto1.classList.add("surgirProjeto1")
         }if(window.scrollY<=300){
             projeto1.classList.remove("surgirProjeto1")
+        }
+
+        if(window.scrollY>=305){
+            projeto2.classList.add("surgirProjeto2")
+        }if(window.scrollY<=300){
+            projeto2.classList.remove("surgirProjeto2")
         }
 
 } 
