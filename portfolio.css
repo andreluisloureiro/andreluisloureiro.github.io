@@ -53,7 +53,7 @@ body {
     justify-content: center;
     position: fixed;
     background-size: 125% 125%;
-    background-image: linear-gradient(-45deg, #690e61 0%, #030614 25%, #300524 51%, #64135e 100%);
+    background-image: linear-gradient(-45deg, #690e61 0%, #030614 25%, #14030f 51%, #591153 100%);
     animation: AnimateBG 15s ease infinite;
     top: 0;
     bottom: 0;
@@ -95,7 +95,7 @@ body {
     background-color: #03081c;
     display: flex;
     position: relative;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     z-index: +1;
     opacity: 100%;
@@ -146,7 +146,7 @@ body {
     margin-top: 150px;
     margin-bottom: 0px;
     transition: 300ms;
-    clip-path: polygon(25px 0%, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%, 0% 25px);
+    clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px);
 }
 
 
@@ -203,6 +203,7 @@ img:hover {
     background-color: transparent;
     transition: 500ms;
     margin-bottom: 10px;
+    clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px);
 
 }
 
@@ -220,7 +221,8 @@ img:hover {
     background-color: transparent;
     transition: 500ms;
     border-radius: 10%;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px);
 }
 
 
@@ -237,6 +239,7 @@ img:hover {
     background-color: transparent;
     transition: 500ms;
     margin-bottom: 10px;
+    clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px);
 }
 
 .imagemEu {
@@ -299,7 +302,7 @@ a:hover {
 
 
 .containerSobreMim {
-    width: 350px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,7 +338,7 @@ a:hover {
     font-size: 2vw;
     max-width: 45vw;
     color: white;
-    width: 40vw;
+    width: 150vw;
     left: 100px;
     transition: 500ms ease-in-out;
     opacity: 0%;
@@ -359,11 +362,27 @@ a:hover {
 }
 
 .textoEmail {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
     font-family: 'Smooch Sans', bold;
     color: white;
-    margin-top: 0px;
+    font-size: 30px;
+    margin-right: 35px;
 }
 
+.aEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Smooch Sans', bold;
+    color: white;
+    font-size: max(26px, 3px);
+    text-decoration: none;
+    transition: 500ms;
+    text-align: center;
+}
 
 .projetos {
     display: flex;
@@ -379,9 +398,27 @@ a:hover {
     transition: 1200ms;
     margin: 100px;
     opacity: 0%;
+    width: 450px;
+    height: 500px;
 }
 
 .projeto1.surgirProjeto1 {
+    top: 0px;
+    opacity: 100%;
+}
+
+
+.projeto2 {
+    position: relative;
+    top: 10px;
+    transition: 1200ms;
+    margin: 100px;
+    opacity: 0%;
+    width: 450px;
+    height: 500px;
+}
+
+.projeto2.surgirProjeto2 {
     top: 0px;
     opacity: 100%;
 }
@@ -433,6 +470,9 @@ a:hover {
     .teste {
         margin-top: 5vw;
 
+    }
+    .aEmail {
+        display: none;
     }
 
     .containergeral {
@@ -558,6 +598,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .projeto1 {
@@ -565,6 +606,8 @@ a:hover {
         top: 10px;
         transition: 1200ms;
         margin: 100px;
+        height: 600px;
+        width: 600px;
         opacity: 0%;
     }
 
@@ -572,6 +615,22 @@ a:hover {
         top: 0px;
         opacity: 100%;
     }
+
+    .projeto2 {
+        position: relative;
+        top: 10px;
+        transition: 1200ms;
+        margin: 100px;
+        opacity: 0%;
+        height: 600px;
+        width: 600px;
+    }
+
+    .projeto2.surgirProjeto2  {
+        top: 0px;
+        opacity: 100%;
+    }
+
 
     .imagemProjeto1 {
         width: 40vw;
