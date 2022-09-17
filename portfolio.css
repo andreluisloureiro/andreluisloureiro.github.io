@@ -461,10 +461,10 @@ a:hover {
 
 @media (max-width : 1080px) {
     :root {
-        --containner-height: 200vw;
-        --containner-width: 70%;
-        --fotos-heightWidth: 40vw;
-        --text-fontSize: 5.5vw;
+    --containner-height: 180vw;
+    --containner-width: 70%;
+    --fotos-heightWidth: 35vw;
+    --text-fontSize: 5.5vw;
     }
 
     .teste {
