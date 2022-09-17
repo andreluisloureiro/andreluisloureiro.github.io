@@ -335,7 +335,7 @@ a:hover {
 .textoDescricao {
     position: relative;
     font-family: 'Smooch Sans', bold;
-    font-size: 2vw;
+    font-size: max(34px, 3px);
     max-width: 45vw;
     color: white;
     width: 150vw;
