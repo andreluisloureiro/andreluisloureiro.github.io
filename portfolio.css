@@ -136,7 +136,6 @@ body {
     width: 900px;
     border: 0px;
     border-color: #a80e9b;
-
     border-style: solid;
     position: relative;
     top: 0px;
@@ -340,6 +339,7 @@ a:hover {
     color: white;
     width: 150vw;
     left: 100px;
+    margin: 10px;
     transition: 500ms ease-in-out;
     opacity: 0%;
 }
