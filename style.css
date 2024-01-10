@@ -500,7 +500,7 @@ a:hover {
     }
 
     .nav {
-        height: 15vw;
+        height: 18vw;
         width: 100%;
         display: flex;
         position: relative;
@@ -509,6 +509,9 @@ a:hover {
 
     }
 
+    .nav.header {
+        height: 12vw;
+    }
 
     .textoNav {
 
