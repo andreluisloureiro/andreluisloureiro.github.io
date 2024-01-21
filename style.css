@@ -40,8 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: min(40px);
-
+    height: 100vh;
 }
 
 .coresFundo {
@@ -118,14 +117,8 @@ body {
     width: 900px;
     border: 0px;
     border-color: #a80e9b;
-
     border-style: solid;
     position: relative;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-top: 150px;
     margin-bottom: 0px;
     transition: 300ms;
     clip-path: polygon(15px 0%, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0% 15px);
@@ -259,8 +252,6 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 180px;
-
 }
 
 .imagemDescricao {
