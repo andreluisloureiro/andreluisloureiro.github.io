@@ -285,7 +285,6 @@ a:hover {
     left: 100px;
     opacity: 0%;
     transition: 400ms ease-in-out;
-
 }
 
 .divTitulo.active {
@@ -314,6 +313,25 @@ a:hover {
 }
 
 .textoDescricao.active {
+    left: 0px;
+    opacity: 100%;
+}
+
+.divTituloProjetos {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10vh;
+    opacity: 0%;
+    top: 20px;
+    transition: 400ms ease-in-out;
+}
+
+.divTituloProjetos.active {
+    top: 0px;
     left: 0px;
     opacity: 100%;
 }
@@ -353,7 +371,7 @@ a:hover {
 .projetos {
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -362,7 +380,6 @@ a:hover {
     position: relative;
     top: 10px;
     transition: 1200ms;
-    margin: 100px;
     opacity: 0%;
     width: 450px;
     height: 500px;
@@ -378,7 +395,6 @@ a:hover {
     position: relative;
     top: 10px;
     transition: 1200ms;
-    margin: 100px;
     opacity: 0%;
     width: 450px;
     height: 500px;
@@ -416,26 +432,12 @@ a:hover {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
 @media (max-width : 1080px) {
     :root {
-        --containner-height: 180vw;
+        --containner-height: 85vh;
         --containner-width: 70%;
         --fotos-heightWidth: 35vw;
         --text-fontSize: 5.5vw;
-    }
-
-    .teste {
-        margin-top: 5vw;
-
     }
 
     .aEmail {
@@ -511,6 +513,9 @@ a:hover {
 
     }
 
+    .tudo {
+        height: 95vh;
+    }
 
     .container {
         flex-direction: column;
@@ -547,12 +552,14 @@ a:hover {
     }
 
 
-
     .divEmail {
         margin-top: 0vw;
     }
 
-
+    .divTituloProjetos {
+        margin: 0vh;
+        margin-top: ;
+    }
 
     .projetos {
         display: flex;
