@@ -432,6 +432,8 @@ a:hover {
     color: white;
 }
 
+#loadOverlay{display: none;}
+
 @media (max-width : 1080px) {
     :root {
         --containner-height: 85vh;
@@ -622,4 +624,3 @@ a:hover {
 
 }
 
-#loadOverlay{display: none;}
