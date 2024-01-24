@@ -388,7 +388,7 @@ a:hover {
 .projeto1.active {
     top: 0px;
     opacity: 100%;
-    
+
 }
 
 .projeto2 {
@@ -400,7 +400,7 @@ a:hover {
     height: 500px;
 }
 
-.projeto2.active{
+.projeto2.active {
     top: 0px;
     opacity: 100%;
 }
@@ -622,4 +622,11 @@ a:hover {
 
 }
 
-#loadOverlay{display: none;}
+#loadOverlay {
+    opacity: 100%;
+    transition: 300ms;
+}
+
+#loadOverlay.show {
+    opacity: 0%;
+}

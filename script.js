@@ -36,3 +36,8 @@ function reveal() {
 if (location.hash != "") {
     location.href = location.hash;
 }
+
+
+let css = document.getElementById("loadOverlay");
+
+css.classList.add("show")
